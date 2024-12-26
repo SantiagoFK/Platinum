@@ -1,0 +1,76 @@
+.ly-slideup{
+    background-color: aqua;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 10px 0px 0px;
+    transition: 0.1s;
+    z-index: 1001;
+  
+    &--close{
+      background: none;
+      outline: none;
+      border: none;
+      display: flex;
+      color: red;
+      width: fit-content;
+      height: fit-content;
+      padding: 0;
+      margin-right: 5px;
+      font-size: 2.5rem;
+      position: fixed;
+      right: 0;
+  
+      &:focus, &:hover{
+        outline: 1px solid white;
+      }
+    }
+  
+    &__draggable{
+      background-color: rebeccapurple;
+      width: 100%;
+      height: 40px;
+      border-radius: 10px 10px 0px 0px;
+  
+      &--control{
+        width: 70px;
+        height: 8px;
+        margin-top: 8px;
+        border-radius: 5px;
+        background-color: gray;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%); //para centrar el div al 50% diviendo por partes iguales 
+      }
+    } 
+  
+    &__content{
+      padding: 5px;
+      height: inherit;
+      background-color: purple;
+      overflow: scroll;
+    }
+  
+    &--close-btn{
+      background: none;
+      outline: none;
+      border: none;
+      display: flex;
+      color: var(--ly-slide-up-controls-color);
+      width: fit-content;
+      height: fit-content;
+      opacity: 0.5;
+      padding: 0;
+      margin-right: 10px;
+      font-size: 3rem;
+      position: fixed;
+      right: 0;
+  
+      /*tab focus on close button*/
+      &:focus, &:hover{
+        outline: 1px solid var(--ly-slide-up-tab-focus-color);
+      }
+    }
+  }
+  
