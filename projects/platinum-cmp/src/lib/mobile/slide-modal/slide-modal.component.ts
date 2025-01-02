@@ -1,5 +1,6 @@
 import { OverlayConfig } from '@angular/cdk/overlay';
-import { ChangeDetectionStrategy, Component, effect, EventEmitter, inject, Input, model, OnInit, Output, Renderer2, TemplateRef, viewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component, effect, EventEmitter, inject, Input, 
+  model, OnInit, Output, Renderer2, TemplateRef, viewChild } from '@angular/core';
 import { OverlayDirective } from '../../shared/overlay';
 import { Subscription } from 'rxjs';
 import { CdkDragEnd, CdkDragMove, DragDropModule } from '@angular/cdk/drag-drop';

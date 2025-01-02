@@ -28,7 +28,7 @@
     }
   
     &__draggable{
-      background-color: rebeccapurple;
+      background-color: black;
       width: 100%;
       height: 40px;
       border-radius: 10px 10px 0px 0px;
@@ -48,8 +48,8 @@
     &__content{
       padding: 5px;
       height: inherit;
-      background-color: purple;
-      overflow: scroll;
+      background-color: black;
+      
     }
   
     &--close-btn{
