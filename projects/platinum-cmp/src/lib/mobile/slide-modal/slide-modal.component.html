@@ -1,0 +1,22 @@
+<div class="ly-slideup" cdkDrag cdkDragLockAxis="y" (cdkDragEnded)="onDragEnd($event, slideup)" 
+(cdkDragMoved)="onDragMoved($event, slideup)" #slideup [style.height.px]="isOpen() ? slideHeight : 0" 
+platinum-overlay #slideUp role="dialog" [attr.aria-hidden]="!isOpen()" [attr.aria-modal]="isOpen()" [attr.aria-label]="ariaLabel" 
+[attr.aria-describedby]="ariaDescription" tabindex="0">
+    <!-- draggable section -->
+    <div class="ly-slideup__draggable" cdkDragHandle>
+        <div class="ly-slideup__draggable--control"></div>
+
+        <!-- close button -->
+        <button class="ly-slideup--close-btn" (click)="closeAll()" aria-label="close-slide-up">&times;</button>
+    </div>
+    <!-- end draggable section -->
+    
+    <div class="ly-slideup__content">
+        <ng-content></ng-content>
+    </div>
+
+    <!-- background overlay template -->
+    <ng-template #defaultTemplate>
+
+    </ng-template>
+</div>
